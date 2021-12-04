@@ -1,0 +1,35 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-12 ">
+            <div class="card">
+                <div class="card-body">
+                    <form [formGroup]="eliminarusuarioForm" (ngSubmit)="eliminarUsuario()" 
+                    enctype="multipart/form-data">
+                        <div class="row mb-4">
+                            <p style="font-size: 24px;color: rgba(61, 139, 202, 1);line-height: 34px;text-align: center;font-family:Arial, Helvetica, sans-serif;font-weight:700;font-style:normal"
+                                class="mb-0 text-center">
+                                <strong>Eliminar Usuario</strong>
+                            </p>
+                        </div>
+                        <div class="row mb-0 d-flex justify-content-start">
+                            <p>NoteId</p>
+                        </div>
+                        <div class="form-outline mb-2 form-group label-floating">
+                            <input type="text" formControlName="noteId" class="form-control" />
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-2 ">
+                                <div class="row justify-content-center">
+                                    <button  type="submit" [disabled]="eliminarusuarioForm.invalid" style="background-color: rgba(38, 168, 223, 1)" class="btn btn-primary btn-block mb-4">
+                                        Enviar
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> 
+ </div>
